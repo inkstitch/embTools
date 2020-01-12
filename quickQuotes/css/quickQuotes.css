@@ -1,0 +1,158 @@
+/* Defaults */
+
+.col-1 {width: 100%}
+.col-2 {width: 50%}
+
+body {
+      background-image: url("../../images/background.png");
+      background-repeat: repeat;
+}
+
+
+    /* Title Heading */
+
+h1 {
+  text-align: center;
+}
+
+
+
+    /* Top Links */
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+
+h2 {
+  text-align: center;
+}
+
+      /* Links */
+
+a.basePriceAlert {
+    color: black;
+    text-decoration: underline dotted;
+}
+
+
+
+      /* Client Info */
+
+#leftClient {
+  text-align: center;
+  float: left;
+}
+
+#rightClient {
+  text-align: center;
+  float: right;
+}
+
+       /* Substrate Info */
+
+table {
+  width: 100%;
+}
+
+th.totals {
+  left-margin: 300px;
+}
+
+th.quantityTotal {
+  float: left;
+}
+
+th.priceTotal {
+  float: right;
+}
+        /* Embroidery Pricing */
+
+div.embroideryContainer {
+  text-align: center;
+}
+
+        /* Markup and Discount */
+
+#markupOnly {
+  text-align: center;
+  float: left;
+}
+
+#discountOnly {
+  text-align: center;
+  float: right;
+}
+
+          /* Additional Notes */
+
+div.notes {
+  text-align: center;
+}
+
+textarea#notes {
+  width: 800px;
+  height: 200px;
+
+}
+
+
+          /* Buttons */
+
+div.buttonRow {
+  text-align: center;
+}
+p.printButton button.noprint a{
+  text-decoration: none;
+  color: black;
+}
+
+button#preTotal{
+  display: none;
+}
+
+button.lineCost{
+  display: none;
+}
+
+button#newLine{
+  margin: 0 auto;
+  display: block;
+}
+
+/* Number Inputs Disable Arrows */
+
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    background: none;
+}
+  /* Print Quote Form */
+
+@media print {
+  .noprint {
+    display: none;
+  }
+}
+
+@media screen {
+  ...
+}
+
+/* Mobile Stylings */
+
+@media only screen and (max-width:566px){
+div#substrates input{
+    width: 50px;
+}
+
+textarea#notes {
+    width: 350px;
+}
+
+}

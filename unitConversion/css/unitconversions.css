@@ -1,0 +1,43 @@
+/* Defaults */
+
+body {
+      background-image: url("../../images/background.png");
+      background-repeat: repeat;
+}
+/* Custom Styles */
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+      /* Title */
+
+h1.title {
+  text-align: center;
+}
+
+      /* Conversions */
+
+.container {
+  text-align: center;
+}
+
+a {
+text-decoration: none;
+color: black;
+
+}
+
+
+
+
+
+/* Mobile Styles */

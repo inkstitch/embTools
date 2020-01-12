@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>embTools Notes</title>
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="icon" type="image/png" href="../logo/favIcon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../logo/favIcon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="../logo/favIcon-32x32.png" sizes="32x32">
+  </head>
+  <body>
+
+
+<!-- Quotes Note Taking App -->
+<div id="quotes"><p id="quoteHeading">Quotes</p>
+  <ul class="tasks" id="quoteID">
+    <li>New Quotes</li>
+  </ul>
+  <form class="taskAdder">
+    <input type="text" id="note" name="quote" placeholder="Add New Quote Here" required>
+    <input class="submit" type="submit"  value="Add Quote">
+  </form>
+
+</div>
+
+
+<!-- To Do List App -->
+
+<div id="toDo"><p id="toDoHeading">To Do List</p>
+  <ul class="tasks" id="tasksID">
+    <li>New To Do Item</li>
+  </ul>
+  <form class="noteAdder">
+    <input type="text" id="toDo" name="task" placeholder="Add New To Do Here" required>
+    <input class="submit" type="submit"  value="Add To Do">
+  </form>
+
+</div>
+
+<div class="clearStorage">
+  <button id="clearBtn" type="button" name="clearBtn"></button>
+</div>
+
+
+
+
+
+<script src="js/notes.js" charset="utf-8"></script>
+  </body>
+</html>

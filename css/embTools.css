@@ -1,0 +1,78 @@
+/* Defaults */
+
+/* Custom Styles */
+
+.col-1 {width: 50%}
+.col-2 {width: 100%}
+.col-3 {width: 33.33%}
+
+
+    /* Title Heading */
+
+h1.title {
+  text-align: center;
+}
+
+
+
+    /* Top Links */
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+    /* iframe */
+iframe {
+  width: 100%;
+  height: 2000px;
+}
+
+         /* Body Background */
+
+body {
+      background-image: url("../images/background.png");
+      background-repeat: repeat;
+}
+
+        /* Logo Animation Styling */
+#logoAnimation {
+width: 1892px;
+height: 1025px;
+background: url("../images/logo.png") left center;
+background-size: cover;
+animation: play .5s steps(13) 8;
+display: inline-block;
+}
+
+@keyframes play {
+  100% {background-position: -24596px;}
+}
+
+
+/* Mobile Settings */
+
+@media only screen and (max-width:566px){
+    #logoAnimation {
+  width: 292px;
+  height: 211px;
+  background: url("../images/logoSmall.png") left center;
+  background-size: cover;
+  animation: play .5s steps(13) 8;
+  display: inline-block;
+}
+
+@keyframes play {
+  100% {background-position: -3796px;}
+}
+
+
+}
+
+    /* Footer */
+
+
+
+/* Mobile Styles */

@@ -1,0 +1,81 @@
+body {
+      background-image: url("../../images/background.png");
+      background-repeat: repeat;
+}
+
+
+div#quotes {
+  width: 20%;
+  text-align: center;
+  float: left;
+  background-color: rgb(203, 212, 101);
+}
+
+div#toDo {
+  width: 20%;
+  text-align: center;
+  float: right;
+  background-color: rgb(13, 137, 176);
+}
+
+p#quoteHeading {
+  text-align: center;
+  background-color: rgb(201, 204, 166);
+}
+
+p#toDoHeading {
+  text-align: center;
+  background-color: rgb(93, 150, 168);
+}
+
+input#note{
+  width: 357px;
+}
+input#toDo{
+  width: 357px;
+}
+
+.done{
+  color: red;
+  text-decoration: line-through;
+}
+
+li{
+  text-align: left;
+}
+
+/* Top Links */
+
+a {
+text-decoration: none;
+color: black;
+
+}
+
+h1.title {
+  text-align: center;
+}
+
+/* Side Bar Styles */
+
+@media only screen and (max-width:566px){
+
+  div#quotes{
+    width: 40%;
+    float: left;
+  }
+
+
+div#toDo{
+  width: 50%;
+  float: right;
+}
+
+input#note{
+  width: 155px;
+}
+
+
+
+
+}

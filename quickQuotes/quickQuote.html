@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head class="noprint">
+    <meta charset="utf-8">
+    <title>embTools Quotes</title>
+    <link rel="stylesheet" href="css/quickQuotes.css">
+    <link rel="icon" type="image/png" href="../favIcon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../favIcon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="../favIcon-32x32.png" sizes="32x32">
+
+  </head>
+  <body>
+
+    <!-- Title and Top Links -->
+<!-- <h1 class="title"><p class="titleHeading"><a href="../embTools.html">embTools</a></p></h1>
+    <div class="topLinks">
+      <table class="links" style="width:100%">
+        <tr>
+          <th class="notes">
+            <a href="../notes/notes.html"><p class="notes">Notes</p></a></th>
+          <th class="conversions"><a href="../unitConversion/unitconversions.html"><p class="conversions">Unit Conversions</p></a>
+          </th>
+          <th class="stitchTimer">
+            <a href="../stitchTimer/stitchtimer.html"><p class="timer">Stitch Run Time</p></a>
+          </th>
+          <th class="quickQuote">
+            <a href="quickQuote.html"><p class="quote">Quote</p></a>
+          </th>
+        </tr>
+      </table> -->
+
+<!-- Quote Calculator -->
+
+<h1 class="noprint">Quote Calculator</h1><br>
+<div class="container">
+<div class="row">
+    <h2 class="customerInfo">Customer Info</h2><br>
+<!-- Left Side Customer Info -->
+
+<div class="col-2" id="leftClient">
+  <p>Customer Name</p>
+ <p class="customerInput"><input id="customerName" type="text" placeholder="Customer Name" class="customer(this.input)"></p>
+
+ <p>Address</p>
+ <p class="address"><input id="address" type="text" placeholder="Address" class="clientAddress(this.input)"></p>
+
+ <p>Email</p>
+ <p class="email"><input id="email" type="text" placeholder="Email" class="clientEmail(this.input)"></p>
+
+
+<p>Telephone</p>
+<p class="telephone"><input id="telephoneNumber" type="text" placeholder="Telephone" class="clientTelephone(this.input)"></p>
+</div>
+
+<!-- Right Side Customer Info -->
+
+<div class="col-2" id="rightClient">
+
+<p>Date</p>
+<p class="date"><input id="date" type="text" placeholder="Date of Quote" class="quoteDate(this.input)"></p>
+
+<p>Purchase Order Number</p>
+<p class="purchaseOrder"><input id="poOrder" type="text" placeholder="Purchase Order" class="clientAddress(this.input)"></p>
+
+<p>Name of Design Used</p>
+<p class="design"><input id="designUsed" type="text" placeholder="Name of Design Used" class="designUsed(this.input)"></p>
+
+
+<p>Method of Payment</p>
+<p class="payment"><input id="paymentUsed" type="text" placeholder="Method of Payment Used" class="paymentUsed(this.input)"></p>
+</div>
+</div>
+  </div>
+  <br>
+  <br>
+
+<!-- Substrate Info -->
+<div class="container" id="substrates">
+  <div class="row-2">
+    <div class="col-1">
+       <h2 class="substrates">Substrates Used</h2>
+    <table>
+      <tbody id="substrateInfo">
+        <tr>
+           <th id="qt"><p>Qty:</p></th>
+           <th id="model"><p>Model #</p></th>
+           <th id="description"><p>Description</p></th>
+           <th id="size"><p>Size</p></th>
+           <th id="color"><p>Color</p></th>
+           <th id="basePrice"><p>Base Price</p></th>
+           <!-- <th id="lineTotalCost"><p>Line Cost</p></th> -->
+         </tr>
+         <tr class="lines">
+          <th><input type="number" value="0" class="quantity"></th>
+          <th><input  type="string" placeholder="Model Number" class="model"></th>
+          <th><input  type="text" placeholder="Description" class="description(this.input)"></th>
+          <th><input  type="text" placeholder="Size of Substrates" class="size(this.input)"></th>
+          <th><input  type="text" placeholder="Colors Used" class="colors(this.input)"></th>
+          <th><input type="number" step="0.01" value="0"  class="basePrice"></th>
+          <th class="lineCost"><button class="lineCost"><input value="0" class="indyPrice" type="number" span="0.01"></input></button></th>
+         </tr>
+         <tr class="lines">
+          <th><input type="number" value="0" class="quantity"></th>
+          <th><input id="modelNum2" type="string" placeholder="Model Number" class="model(this.input)"></th>
+          <th><input type="text" placeholder="Description" class="description"></th>
+          <th><input type="text" placeholder="Size of Substrates" class="size"></th>
+          <th><input type="text" placeholder="Colors Used" class="colors"></th>
+          <th><input type="number" step="0.01" value="0"  class="basePrice"></th>
+          <th class="lineCost"><button class="lineCost"><input value="0" class="indyPrice" type="number" span="0.01"></input></button></th>
+         </tr>
+         <tr class="lines">
+          <th><input type="number" value="0" class="quantity"></th>
+          <th><input type="string" placeholder="Model Number" class="model"></th>
+          <th><input type="text" placeholder="Description" class="description"></th>
+          <th><input type="text" placeholder="Size of Substrates" class="size"></th>
+          <th><input type="text" placeholder="Colors Used" class="colors"></th>
+          <th><input type="number" step="0.01" value="0"  class="basePrice"></th>
+          <th class="lineCost"><button class="lineCost"><input value="0" class="indyPrice" type="number" span="0.01"></input></button></th>
+         </tr>
+         <tr class="lines">
+          <th><input type="number" value="0" class="quantity"></th>
+          <th><input type="string" placeholder="Model Number" class="model"></th>
+          <th><input type="text" placeholder="Description" class="description"></th>
+          <th><input type="text" placeholder="Size of Substrates" class="size"></th>
+          <th><input type="text" placeholder="Colors Used" class="colors"></th>
+          <th><input type="number" step="0.01" value="0"  class="basePrice"></th>
+          <th class="lineCost"><button class="lineCost"><input value="0" class="indyPrice" type="number" span="0.01"></input></button></th>
+         </tr>
+         <tr class="lines">
+          <th><input type="number" value="0" class="quantity"></th>
+          <th><input type="string" placeholder="Model Number" class="model"></th>
+          <th><input type="text" placeholder="Description" class="description"></th>
+          <th><input type="text" placeholder="Size of Substrates" class="size"></th>
+          <th><input  type="text" placeholder="Colors Used" class="colors"></th>
+          <th><input type="number" step="0.01" value="0"  class="basePrice"></th>
+          <th><button class="lineCost"><input value="0" class="indyPrice" type="number" span="0.01"></input></button></th>
+         </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+<!-- Button to Add New Line -->
+    <button class="noprint" id="newLine">Add New Entry</button>
+  </div>
+  <button id="preTotal"><input id="sub" type="number" span="0.01" value="0" class="subtotal">SubTotal</input></button>
+  </div>
+
+  <br>
+  <br>
+
+
+
+<!-- Embroidery Pricing Info -->
+
+<div class="embroideryTitle"><h2 class="embroideryHeading">Embroidery Pricing</h2></div>
+<br>
+<div class="embroideryContainer">
+   <div class="embroideryRow">
+     <div class"col-1">
+
+       <p>Setup/Digitizing</p>
+       <p class="setup"><input id="embroiderySetup" value="0" type="number"  step="0.01" class="setup(this.input)"></p>
+
+       <p>Price of Embroidery per 1k Stitches</p>
+       <p class="price"><input id="priceEmbroidery" type="number" step="0.01" value="0" class="priceEmbroidery(this.input)"></p>
+
+       <p>Number of Stitches in Pattern</p>
+       <p class="stitches"><input id="stitchCount" type="number" value="0" class="stitches"></p>
+
+     </div>
+   </div>
+</div>
+
+<!-- Markup and Discount -->
+
+<div class="markupDiscount">
+   <div class="markupContainer">
+       <div class="markupRow">
+         <div class="col-2" id="markupOnly">
+           <p>Markup %</p>
+           <p class="markup"><input id="embroideryMarkup" type="number" value="0" class="markup(this.input)"></p>
+         </div>
+         <div class="col-2" id="discountOnly">
+           <p>Discount %</p>
+           <p class="discount"><input id="embroideryDiscount" type="number" value="0" class="discount(this.input)"></p>
+         </div>
+       </div>
+   </div>
+</div>
+<br>
+<br>
+
+<!-- Additional Notes About Order -->
+
+<div class="notes">
+   <div class="notesContainer">
+       <div class="notesRow">
+          <div class="col-1">
+            <p>Additional Order Notes</p>
+             <textarea name="notes" id="notes"></textarea>
+          </div>
+       </div>
+   </div>
+</div>
+
+<!-- Buttons for Quoting and Printing -->
+
+<div class="quoteDiscount">
+  <div class="buttonContainer">
+     <div class="buttonRow">
+       <div class="col-1" id="quoteAndPrintButtons">
+
+         <p class="quoteButton" ><button id="quotebutton" type="number" class="quote" step="0.01">Quote</button><span id="quoteButton" type="number" span="0.01"></span></p>
+         <p class="printButton"><button  class="noprint" id="printButton"><a href="javascript:window.print()">Print Quote</a></button></p>
+
+       </div>
+     </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/quickQuote.js">
+</script>
+  </body>
+</html>

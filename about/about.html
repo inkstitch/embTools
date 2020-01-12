@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About embTools</title>
+    <style media="screen">
+
+body {
+  display: block;
+  background: url('../images/background.png');
+
+}
+
+
+/* Custom styles */
+
+body .intro {
+  text-align: center;
+}
+
+
+p {
+  text-align: center;
+
+}
+
+p.sourceCode a {
+  color: black;
+  text-decoration: underline dotted;
+}
+
+#logoAnimation {
+width: 292px;
+height: 211px;
+background: url("../images/logoSmall.png") left center;
+background-size: cover;
+animation: play .5s steps(13) infinite;
+display: block;
+margin-left: 30%;
+margin-right: 30%;
+}
+
+@keyframes play {
+100% {background-position: -3796px;}
+}
+    </style>
+  </head>
+  <body>
+    <h1 class="intro">About embTools</h1>
+ <div class="about">
+   <p class="info">This is just a simple collection of tools that I have found useful to have.  embTools is broken up into "modules".  You have a module for unit conversions (the most common ones that I use), machine stitch time (can account for trims and trim speed if known), and a simple quoting module to help get a quick quote out to the customer.  Can even save the quote (either to file or physical copy) for your records as well by using the "Print" button.</p>
+   <p class="infoPart2">This program is bundled as an Electron app, so it is cross platform.  As of right now, it is setup for Windows and Linux platforms, although it can be adapted for those users that are on the Mac platform as well.  I had originally started this project as a Firefox extension, but some of the storage methods used (for the notes module) were not as persistent as I would like, so that is the main reason why I moved it to an Electron based application.</p>
+   <!-- <p class="sourceCode">embTools is open source and the source code is available on <a href="https://github.com/wwderw/embTools" target="_blank">Github</a>.</p> -->
+ </div>
+
+ <div id="logoAnimation"></div>
+
+ <script type="text/javascript">
+   var exit = document.querySelector('body');
+   exit.addEventListener('click', function(){
+     window.close();
+     console.log('clicked!');
+   });
+ </script>
+  </body>
+</html>

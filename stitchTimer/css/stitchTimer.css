@@ -1,0 +1,59 @@
+/* Defaults */
+
+body {
+      background-image: url("../../images/background.png");
+      background-repeat: repeat;
+}
+
+
+    /* Title Heading */
+
+h1.title {
+  text-align: center;
+}
+
+
+
+    /* Top Links */
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+/* Custom Stylings */
+
+h1 {
+  text-align: center;
+}
+
+.stitchRunTime {
+  text-align: center;
+}
+
+a.trimSpeedAlert {
+  color: black;
+  text-decoration: underline dotted;
+}
+
+/* Custom Styles */
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+
+
+/* Mobile Stylings */

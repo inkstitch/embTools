@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>embTools Stitch Timer</title>
+    <link rel="stylesheet" href="css/stitchTimer.css">
+    <link rel="icon" type="image/png" href="../favIcon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../favIcon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="../favIcon-32x32.png" sizes="32x32">
+  </head>
+  <body>
+
+    <!-- Title and Top Links -->
+    <!-- <h1 class="title"><p class="titleHeading"><a href="../embTools.html">embTools</a></p></h1>
+    <div class="topLinks">
+      <table class="links" style="width:100%">
+        <tr>
+          <th class="notes">
+            <a href="../notes/notes.html"><p class="notes">Notes</p></a></th>
+          <th class="conversions"><a href="../unitConversion/unitconversions.html"><p class="conversions">Unit Conversions</p></a>
+          </th>
+          <th class="stitchTimer">
+            <a href="stitchtimer.html"><p class="timer">Stitch Run Time</p></a>
+          </th>
+          <th class="quickQuote">
+            <a href="../quickQuotes/quickQuote.html"><p class="quote">Quote</p></a>
+          </th>
+        </tr>
+      </table> -->
+
+
+    <h1 class="title">Stitch Run Time Calculator</h1>
+    <div class="stitchRunTime"><h2><p>Amount of Stitches</p></h2>
+      <input id="stitches" type="number" value="0" class="stitches"></p>
+    <h2>Machine Speed</h2><br>
+    <p>  <input id="speed" type="number"  value="0" class="speed"></p>
+    <h2>Amount of Trims</h2><br>
+      <p><input id="trims" type="number" value="0"></p>
+    <h2>Trim Speed</h2><br>
+      <p><input id="trimSpeed" type="number" value="0" class="speed"></p>
+    <h2>Total Time</h2>
+    <p><button id="stitchSpeed">Stitch Speed</button><span id="speedWithTrims"></span></p>
+
+    <script type="text/javascript" src="js/stitchtimer.js">
+    </script>
+    </div>
+  </body>
+</html>
