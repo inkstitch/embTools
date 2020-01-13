@@ -1,8 +1,8 @@
-#embTools
+# embTools
 
 Open source browser based toolset for the most common conversions, stitch run timer and a quoting form for embroiderers to use to help quote for embroidery projects.
 
-#Purpose
+# Purpose
 
 Main purpose of this started out for something that I could use that had all the most common tools that I needed to accurately quote a project all in one central location.
 
@@ -14,7 +14,7 @@ It can also help when looking at stock designs to purchase and how long those de
 
 The quoting module came about when there was a need for something more automated then always having to do it by pen and paper.  After everything has been field out in the form, it can then be printed either to a physical copy or to a file for archiving.
 
-#Installation
+# Installation
 
 Installation is very simple.  Download this repo, extract the contents where you want them.  Open embTools.html in the browser of your choice and bookmark it for easy use later.
 
