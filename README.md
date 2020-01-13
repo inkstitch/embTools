@@ -16,6 +16,16 @@ The quoting module came about when there was a need for something more automated
 
 # Installation
 
-Installation is very simple.  Download this repo, extract the contents where you want them.  Open embTools.html in the browser of your choice and bookmark it for easy use later.
+Installation requires Yarn and Electron-Builder.
 
-I hope you enjoy embTools and find it useful.
+Install Yarn based on the instructions for your particular platform.
+
+Add Electron-Builder to your project using:
+
+'yarn add electron-builder --dev'
+
+then:
+
+'yarn electron-builder build' 
+
+That will build for the particular platform that you are on (setup for either Linux or Windows right now).
