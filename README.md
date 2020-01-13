@@ -22,10 +22,10 @@ Install Yarn based on the instructions for your particular platform.
 
 Add Electron-Builder to your project using:
 
-'yarn add electron-builder --dev'
+`yarn add electron-builder --dev`
 
 then:
 
-'yarn electron-builder build' 
+`yarn electron-builder build` 
 
 That will build for the particular platform that you are on (setup for either Linux or Windows right now).
