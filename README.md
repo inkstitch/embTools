@@ -1,6 +1,6 @@
 # embTools
 
-Open source browser based toolset for the most common conversions, stitch run timer and a quoting form for embroiderers to use to help quote for embroidery projects.
+Electron app for the most common conversions, stitch run timer and a quoting form for embroiderers to use to help quote for embroidery projects.
 
 # Purpose
 
