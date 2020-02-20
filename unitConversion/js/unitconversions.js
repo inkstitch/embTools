@@ -1,51 +1,62 @@
 
 // conversions
 
-var inputIN = document.querySelector("#inputIN");
+  // Inches to MM
 
-inputIN.addEventListener('input', function() {
-       let input = parseFloat(document.getElementById("inputIN").value);
-   let answer = document.getElementById("outputMM");
-   
-   answer.innerHTML = input * 25.4;
-    
-});
+var inch = document.querySelector("#inputIN");
+var mm = document.querySelector("#inputMM");
 
+inch.addEventListener('input', function(){
+  let input = parseFloat(document.getElementById("inputIN").value);
 
-var inputin = document.querySelector("#inputin");
+  let answer = document.getElementById("inputMM");
+  answer.value = input * 25.4;
+})
 
-inputin.addEventListener('input' , function(){
-    
-    let input = parseFloat(document.getElementById("inputin").value);
-    let answer = document.getElementById("outputCM");
-    
-    answer.innerHTML = input / 0.39370;
-    
-    
-});
-
-
-var inputMM = document.querySelector("#inputMM");
-
-inputMM.addEventListener('input' , function(){
-    
+mm.addEventListener("input", function(){
     let input = parseFloat(document.getElementById("inputMM").value);
-    let answer = document.getElementById("outputIN");
-    
-    answer.innerHTML = input / 25.4;
-    
-});
 
+    let answer = document.getElementById("inputIN");
 
-var inputCM = document.querySelector("#inputCM");
+    answer.value = input / 25.4;
+})
 
-inputCM.addEventListener('input' , function(){
-    
-    let input = parseFloat(document.getElementById("inputCM").value);
-    let answer = document.getElementById("outputIn");
-    
-    answer.innerHTML = input * 0.39370;
-    
-    
-});
+  // Inches to CM
 
+var inch2 = document.querySelector("#inputin");
+var cm = document.querySelector("#inputCM");
+
+inch2.addEventListener('input', function(){
+   let input = parseFloat(document.getElementById("inputin").value);
+
+   let answer = document.getElementById("inputCM");
+   answer.value = input / 0.39370;
+
+})
+
+cm.addEventListener('input', function(){
+
+   let input = parseFloat(document.getElementById("inputCM").value);
+
+   let answer = document.getElementById("inputin");
+
+   answer.value = input * 0.39370;
+
+})
+
+// Pixels to MM
+
+var px = document.querySelector("#inputPX");
+var mm2 = document.querySelector("#inputMm");
+
+px.addEventListener('input', function(){
+  let input = parseFloat(document.getElementById("inputPX").value);
+  let answer = document.getElementById("inputMm");
+  answer.value = input * 0.2645833333;
+})
+
+mm2.addEventListener('input', function(){
+  let input = parseFloat(document.getElementById("inputMm").value);
+  let answer = document.getElementById("inputPX");
+  answer.value = input / 0.2645833333;
+})
