@@ -90,6 +90,12 @@ const menuTemplate = [
   }
 ]
 
+
+// MacOS Check for Menu Bar
+if (process.platform === 'darwin') {
+    menuTemplate.unshift({});
+}
+
 // Menu Functions
      // Notes Menu Function
 function notes(){
