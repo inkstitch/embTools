@@ -18,7 +18,7 @@ function createWindow() {
         useContentSize: true,
         title: "embTools",
         backgroundColor: '#ffffff',
-        //     frame: false
+        icon: path.join(__dirname, 'logo/favIcon-32x32.png')
     });
 
 
@@ -90,12 +90,6 @@ const menuTemplate = [
   }
 ]
 
-
-// MacOS Check for Menu Bar
-if (process.platform === 'darwin') {
-    menuTemplate.unshift({});
-}
-
 // Menu Functions
      // Notes Menu Function
 function notes(){
@@ -140,7 +134,8 @@ function about(){
       title: "about embTools",
       backgroundColor: '#ffffff',
       frame: false,
-      parent: mainWindow
+      parent: mainWindow,
+      icon: path.join(__dirname, 'logo/favIcon-32x32.png')
   });
 
 aboutWindow.loadFile("about/about.html");
