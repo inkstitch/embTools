@@ -4,7 +4,7 @@
   "productName": "embTools",
   "description": "A simple desktop utility for the embroidery shop to do unit conversions, take project notes, calculate stitch times and give quotes.",
   "author": "Evan (Wild West) West",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "dist": "build"
   },
