@@ -1,0 +1,89 @@
+/* Body Background */
+
+
+body{
+  background-image: url("../../images/background.png");
+}
+
+/* Center DIVs */
+
+div.addDatabase{
+  width: 600px;
+  margin: 0 auto;
+}
+
+div.addEntry{
+  width: 50%;
+  margin: 0 auto;
+}
+
+div.exportingImporting{
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Table CSS */
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #0f5e85;
+  font-size:18px;
+  text-align: center;
+}
+
+table tr{
+  border-bottom: 2px solid #0f5e85;
+
+}
+
+tr.header{
+  background-color: rgba(40, 236, 71, 0.38);
+  border-right: 2px solid #0f5e85;
+}
+
+td{
+  border-right: 2px solid #0f5e85;
+  border-top: 2px solid #0f5e85;
+}
+
+/* Buttons CSS */
+
+button{
+  background: transparent;
+}
+
+
+/* Custom Icons */
+
+button#submitEntry{
+  background:url("../icons/addEntry.svg") no-repeat;
+  height:35px;
+  width: 35px;
+}
+
+input#searchDatabase{
+  background:url("../icons/searchIcon.svg") no-repeat;
+  padding-left: 40px;
+  height: 32px;
+}
+
+button#exporting{
+  background:url("../icons/saveDatabase.svg") no-repeat;
+  height: 40px;
+  width: 40px;
+  margin-right:40px;
+}
+
+button.deleteEntry{
+  background:url("../icons/close.svg") no-repeat;
+  height:20px;
+  width:20px;
+  margin-right:40px;
+}
+
+button#destroyDB{
+  background:url("../icons/deleteDatabase.svg") no-repeat;
+  height:40px;
+  width:40px;
+}

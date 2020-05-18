@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Client Database</title>
+    <link rel="stylesheet" href="css/clientDB.css">
+  </head>
+  <body>
+    <div class="addDatabase">
+      <h1>embTools - Client Database</h1>
+
+    </div>
+
+<!-- Add to Client Database -->
+
+<div class="addEntry">
+  <form class="addClientEntry">
+  <input id="clientName" type="text" name="clientName" value="" placeholder="Enter Name">
+  <input id="clientEmail" type="text" name="clientEmail" value="" placeholder="Enter Email">
+  <input id="clientPhone" type="number" name="clientPhone" value="" placeholder="Enter Client Phone Number">
+  <input id="clientMobile" type="number" name="clientMobile" value="" placeholder="Enter Client Mobile Number">
+  <input id="address" type="text" name="address" value="" placeholder="Enter Address">
+  <input id="billingAddress" type="text" name="" value="" placeholder="Enter Billing Address">
+  <input id="businessName" type="text" name="businessName" value="" placeholder="Enter Business Name">
+  <input id="notes" type="text" name="clientName" value="" placeholder="Enter Notes">
+  <button id="submitEntry" type="submit"></button>
+</div>
+</form>
+<br>
+<br>
+<br>
+
+<!-- Search for Names -->
+<div id="search">
+<input id="searchDatabase" onkeyup="searchDatabase()" type="text" placeholder="Search for Client Name">
+
+</div>
+<br>
+<br>
+<br>
+
+<!-- HTML Table -->
+
+<div id="clientTable">
+<table>
+  <tbody>
+    <tr class="header">
+    <th id="name">Name</th>
+    <th id="email">Email</th>
+    <th id="phone">Phone Number</th>
+    <th id="mobile">Mobile Number</th>
+    <th id="address">Address</th>
+    <th id="billAddress">Billing Address</th>
+    <th id="businessName">Business Name</th>
+    <th id="clientNotes">Notes</th>
+    <th></th>
+  </tr>
+</tbody>
+<tbody id="clientDatabase">
+</tbody>
+</table>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- Backing Up, Restoring, and Destroying Database -->
+<div class="exportingImporting">
+  <button id="exporting" type="button" name="button"></button>
+  <input id="backupFile" type="file" name="" value="">
+  <button id="destroyDB" type="button"></button>
+</div>
+
+<script src="js/clientDB.js" charset="utf-8"></script>
+  </body>
+</html>
