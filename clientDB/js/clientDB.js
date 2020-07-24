@@ -33,7 +33,7 @@ function saveStorage(){
 
 function outputClients(){
   let html=clientDatabase.map(function(data, i){
-    return '<tr data-index='+i+'><td>'+data.name+'</td><td>><a href="mailto:'+data.email+'">'+data.email+'</a></td><td>'+data.phone+'</td><td>'+data.mobile+'</td><td>'+data.address+'</td><td>'+data.billing+'</td><td>'+data.business+'</td><td>'+data.notes+'</td><td><button class="deleteEntry"></button></td></tr>'
+    return '<tr data-index='+i+'><td>'+data.name+'</td><td>><a href="mailto:'+data.email+'">"'+data.email+'</a></td><td>'+data.phone+'</td><td>'+data.mobile+'</td><td>'+data.address+'</td><td>'+data.billing+'</td><td>'+data.business+'</td><td>'+data.notes+'</td><td><button class="deleteEntry"></button></td></tr>'
   })
   clientTable.innerHTML=html.join('');
 
